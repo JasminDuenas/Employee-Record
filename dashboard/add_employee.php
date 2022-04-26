@@ -58,6 +58,11 @@
 						<div class="error phoneerror"></div>
 					</div>
 					<div class="input-box input-small right">
+						<label for="dateemployed">Birthday</label><br>
+						<input type="text" id="datepicker" class="inputField birthday" name="birthday">
+						<div class="error dateemployederror"></div>
+					</div>
+					<div class="input-box input-small right">
 						<label for="jobtype">Job Position</label><br>
 						<input type="text" class="inputField jobtype" name="jobtype">
 						<div class="error jobtypeerror"></div>
