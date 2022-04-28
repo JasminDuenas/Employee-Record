@@ -16,11 +16,11 @@
 		$resaddress = mysqli_real_escape_string($db_connect, $_POST['resaddress']); //edit: department
 		$reslocation = mysqli_real_escape_string($db_connect, $_POST['reslocation']); //edit: daily rate
 		$gpsreslocation = mysqli_real_escape_string($db_connect, $_POST['gpsreslocation']); //edit: monthly rate
-		$resdirection = mysqli_real_escape_string($db_connect, $_POST['resdirection']); //allowance
+		$resdirection = mysqli_real_escape_string($db_connect, $_POST['resdirection']); //Home address
 		$passport_photo_name = mysqli_real_escape_string($db_connect, $_POST['passport_photo_name']);
 		$idnumber = mysqli_real_escape_string($db_connect, $_POST['idnumber']); //edit: ss number
-		$idtype = mysqli_real_escape_string($db_connect, $_POST['idtype']); //edit: HDMF No.
-		$nationalID_name = mysqli_real_escape_string($db_connect, $_POST['nationalID_name']); //edit: TIN No.
+		$idtype = mysqli_real_escape_string($db_connect, $_POST['idtype']); //edit: HDMF No.------
+		$nationalID_name = mysqli_real_escape_string($db_connect, $_POST['nationalID_name']); //edit: TIN No.----
 		$fullname = mysqli_real_escape_string($db_connect, $_POST['fullname']);
 		$relationship = mysqli_real_escape_string($db_connect, $_POST['relationship']);
 		$kinphone = mysqli_real_escape_string($db_connect, $_POST['kinphone']);
