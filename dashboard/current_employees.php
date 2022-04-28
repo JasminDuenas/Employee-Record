@@ -93,7 +93,6 @@
 												<li class="emp_item">
 													<div class="emp_column emp_id">'.$emp_id.'</div>
 													<div class="emp_column emp_name">'.$first_name." ".$last_name.'</div>
-													
 													<div class="emp_column">'.$date_employed.'</div>
 													<div class="emp_column">'.$job_type.'</div>
 													<div class="emp_column emp_status">'.$status.'</div>

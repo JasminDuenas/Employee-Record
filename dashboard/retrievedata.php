@@ -19,6 +19,7 @@
                 $firstname = $fetch['first_name'];
                 $middlename = $fetch['middle_name'];
                 $lastname = $fetch['last_name'];
+                $birthday = $fetch['birthday'];
                 $phone = $fetch['phone'];
                 $employee_image = $fetch['employee_image'];
                 $id_type = $fetch['id_type'];
@@ -69,10 +70,18 @@
                             <td class="table_column table_head m-column">
                                 Full Name
                             </td>
+
                             <td class="table_column m-column">
                                 '.$fullname.'
                             </td>
+                            <td class="table_column table_head m-column">
+                                Birthday
+                            </td>
+                            <td class="table_column m-column">
+                                '.$birthday.'
+                            </td>
                         </tr>
+
                         <tr class="table_row clearfix">
                             <td class="table_column table_head s-column">
                                 Job Type

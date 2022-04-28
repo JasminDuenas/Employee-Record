@@ -13,28 +13,27 @@
 		$birthday = mysqli_real_escape_string($db_connect, $_POST['birthday']);
 		$jobtype = mysqli_real_escape_string($db_connect, $_POST['jobtype']);
 		$dateemployed = mysqli_real_escape_string($db_connect, $_POST['dateemployed']);
-		$resaddress = mysqli_real_escape_string($db_connect, $_POST['resaddress']);
-		$reslocation = mysqli_real_escape_string($db_connect, $_POST['reslocation']);
-		$gpsreslocation = mysqli_real_escape_string($db_connect, $_POST['gpsreslocation']);
-		$resdirection = mysqli_real_escape_string($db_connect, $_POST['resdirection']);
+		$resaddress = mysqli_real_escape_string($db_connect, $_POST['resaddress']); //edit: department
+		$reslocation = mysqli_real_escape_string($db_connect, $_POST['reslocation']); //edit: daily rate
+		$gpsreslocation = mysqli_real_escape_string($db_connect, $_POST['gpsreslocation']); //edit: monthly rate
+		$resdirection = mysqli_real_escape_string($db_connect, $_POST['resdirection']); //allowance
 		$passport_photo_name = mysqli_real_escape_string($db_connect, $_POST['passport_photo_name']);
-		$idnumber = mysqli_real_escape_string($db_connect, $_POST['idnumber']);
-		$idtype = mysqli_real_escape_string($db_connect, $_POST['idtype']);
-		$nationalID_name = mysqli_real_escape_string($db_connect, $_POST['nationalID_name']);
+		$idnumber = mysqli_real_escape_string($db_connect, $_POST['idnumber']); //edit: ss number
+		$idtype = mysqli_real_escape_string($db_connect, $_POST['idtype']); //edit: HDMF No.
+		$nationalID_name = mysqli_real_escape_string($db_connect, $_POST['nationalID_name']); //edit: TIN No.
 		$fullname = mysqli_real_escape_string($db_connect, $_POST['fullname']);
 		$relationship = mysqli_real_escape_string($db_connect, $_POST['relationship']);
 		$kinphone = mysqli_real_escape_string($db_connect, $_POST['kinphone']);
 		$kinresaddress = mysqli_real_escape_string($db_connect, $_POST['kinresaddress']);
-		$kinresdirection = mysqli_real_escape_string($db_connect, $_POST['kinresdirection']);
+		$kinresdirection = mysqli_real_escape_string($db_connect, $_POST['kinresdirection']); //edit: Address
 		$empstatus = mysqli_real_escape_string($db_connect, $_POST['empstatus']);
-	// dapartment
-	// daily rate
-	// monthly rate
-	// allowance
-	// birthday
-	// ss number
-	// TIN No.
-	// HDMF No.
+	// dapartment--
+	// daily rate--
+	// monthly rate--
+	// allowance--
+	// ss number--
+	// TIN No.--
+	// HDMF No.--
 	// PHIC no.
 	// DOMProcessingInstruction
 

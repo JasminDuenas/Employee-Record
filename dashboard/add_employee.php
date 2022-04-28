@@ -60,7 +60,7 @@
 					<div class="input-box input-small right">
 						<label for="dateemployed">Birthday</label><br>
 						<input type="text" id="datepicker" class="inputField birthday" name="birthday">
-						<div class="error dateemployederror"></div>
+						<div class="error birthdayerror"></div>
 					</div>
 					<div class="input-box input-small right">
 						<label for="jobtype">Job Position</label><br>
