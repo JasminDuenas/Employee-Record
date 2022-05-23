@@ -94,7 +94,7 @@
 						<div class="error phoneerror"></div>
 					</div>
 					<div class="input-box input-small right">
-						<label for="jobtype">Job Position</label><br>
+						<label for="jobtype">Job Type</label><br>
 						<input type="text" class="inputField jobtype" name="jobtype" value="<?php echo $job_type ?>">
 						<div class="error jobtypeerror"></div>
 					</div>
