@@ -72,27 +72,27 @@
 						<select class="inputField empstatus" name="empstatus">
 							<option value="">-- Select status --</option>
 							<option value="former">Former employee</option>
-							<option value="employee">Employee</option>
+							<option value="employee">Employee (Regular)</option>
 						</select>
 						<div class="error empstatuserror"></div>
 					</div>
 					<div class="input-box input-small left">
-						<label for="resaddress">Residential Address</label><br>
+						<label for="resaddress">Department</label><br>
 						<input type="text" class="inputField resaddress" name="resaddress">
 						<div class="error resaddresserror"></div>
 					</div>
 					<div class="input-box input-small right">
-						<label for="reslocation">Location of Residence</label><br>
+						<label for="reslocation">Position</label><br>
 						<input type="text" class="inputField reslocation" name="reslocation">
 						<div class="error reslocationerror"></div>
 					</div>
 					<div class="input-box input-small left">
-						<label for="gpsreslocation">GPS Location of Residence</label><br>
+						<label for="gpsreslocation">Region</label><br>
 						<input type="text" class="inputField gpsreslocation" name="gpsreslocation">
 						<div class="error gpsreslocationerror"></div>
 					</div>
 					<div class="input-box input-textarea right clearfix">
-						<label for="resdirection">Direction to Residence</label><br>
+						<label for="resdirection">Home Address</label><br>
 						<textarea class="inputField resdirection" name="resdirection"></textarea>
 						<div class="error resdirectionerror"></div>
 					</div>
@@ -155,12 +155,12 @@
 						<div class="error kinphoneerror"></div>
 					</div>
 					<div class="input-box input-small right">
-						<label for="kinresaddress">Residential Address</label><br>
+						<label for="kinresaddress">Status</label><br>
 						<input type="text" class="inputField kinresaddress" name="kinresaddress">
 						<div class="error kinresaddresserror"></div>
 					</div>
 					<div class="input-box input-textarea left clearfix">
-						<label for="kinresdirection">Direction to Residence</label><br>
+						<label for="kinresdirection">Home Address</label><br>
 						<textarea class="inputField kinresdirection" name="kinresdirection"></textarea>
 						<div class="error kinresdirectionerror"></div>
 					</div>

@@ -115,13 +115,13 @@
                         </tr>
                         <tr class="table_row clearfix">
                             <td class="table_column table_head s-column">
-                                Residential Address
+                                Department
                             </td>
                             <td class="table_column table_head s-column">
-                                Location of Residence
+                                Position
                             </td>
                             <td class="table_column table_head s-column">
-                                GPS location of residence
+                                Region
                             </td>
                             <td class="table_column s-column">
                                 '.$residence_address.'
@@ -135,7 +135,7 @@
                         </tr>
                         <tr class="table_row clearfix">
                             <td class="table_column table_head l-column">
-                                Direction to Residential Address
+                                Home Address
                             </td>
                             <td class="table_column l-column">
                                 '.$residence_direction.'
@@ -165,7 +165,7 @@
                                 Phone number
                             </td>
                             <td class="table_column table_head m-column">
-                                Residential Address
+                                Status
                             </td>
                             <td class="table_column m-column">
                                '.$phone_of_kin.'
@@ -176,7 +176,7 @@
                         </tr>
                         <tr class="table_row kin_row clearfix">
                             <td class="table_column table_head l-column">
-                                Direction to Residence
+                                Home Address
                             </td>
                             <td class="table_column l-column">
                                '.$kin_residence_direction.'
