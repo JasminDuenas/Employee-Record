@@ -10,30 +10,30 @@
 		$middlename = mysqli_real_escape_string($db_connect, $_POST['middlename']);
 		$lastname = mysqli_real_escape_string($db_connect, $_POST['lastname']);
 		$phone = mysqli_real_escape_string($db_connect, $_POST['phone']);
+		$birthday = mysqli_real_escape_string($db_connect, $_POST['birthday']);
 		$jobtype = mysqli_real_escape_string($db_connect, $_POST['jobtype']);
 		$dateemployed = mysqli_real_escape_string($db_connect, $_POST['dateemployed']);
-		$resaddress = mysqli_real_escape_string($db_connect, $_POST['resaddress']);
-		$reslocation = mysqli_real_escape_string($db_connect, $_POST['reslocation']);
-		$gpsreslocation = mysqli_real_escape_string($db_connect, $_POST['gpsreslocation']);
-		$resdirection = mysqli_real_escape_string($db_connect, $_POST['resdirection']);
+		$resaddress = mysqli_real_escape_string($db_connect, $_POST['resaddress']); //edit: department
+		$reslocation = mysqli_real_escape_string($db_connect, $_POST['reslocation']); //edit: daily rate
+		$gpsreslocation = mysqli_real_escape_string($db_connect, $_POST['gpsreslocation']); //edit: monthly rate
+		$resdirection = mysqli_real_escape_string($db_connect, $_POST['resdirection']); //Home address
 		$passport_photo_name = mysqli_real_escape_string($db_connect, $_POST['passport_photo_name']);
-		$idnumber = mysqli_real_escape_string($db_connect, $_POST['idnumber']);
-		$idtype = mysqli_real_escape_string($db_connect, $_POST['idtype']);
-		$nationalID_name = mysqli_real_escape_string($db_connect, $_POST['nationalID_name']);
+		$idnumber = mysqli_real_escape_string($db_connect, $_POST['idnumber']); //edit: ss number
+		$idtype = mysqli_real_escape_string($db_connect, $_POST['idtype']); //edit: HDMF No.------
+		$nationalID_name = mysqli_real_escape_string($db_connect, $_POST['nationalID_name']); //edit: TIN No.----
 		$fullname = mysqli_real_escape_string($db_connect, $_POST['fullname']);
 		$relationship = mysqli_real_escape_string($db_connect, $_POST['relationship']);
 		$kinphone = mysqli_real_escape_string($db_connect, $_POST['kinphone']);
 		$kinresaddress = mysqli_real_escape_string($db_connect, $_POST['kinresaddress']);
-		$kinresdirection = mysqli_real_escape_string($db_connect, $_POST['kinresdirection']);
+		$kinresdirection = mysqli_real_escape_string($db_connect, $_POST['kinresdirection']); //edit: Address
 		$empstatus = mysqli_real_escape_string($db_connect, $_POST['empstatus']);
-	// dapartment
-	// daily rate
-	// monthly rate
-	// allowance
-	// birthday
-	// ss number
-	// TIN No.
-	// HDMF No.
+	// dapartment--
+	// daily rate--
+	// monthly rate--
+	// allowance--
+	// ss number--
+	// TIN No.--
+	// HDMF No.--
 	// PHIC no.
 	// DOMProcessingInstruction
 
@@ -45,7 +45,7 @@
 		ob_end_clean();
 		if ($check_id == 0) {
 
-			$query = mysqli_query($db_connect, "INSERT INTO `sharp_emp` (`id`, `employee_id`, `first_name`, `middle_name`, `last_name`, `phone`, `employee_image`, `id_type`, `id_number`, `id_card_image`, `residence_address`, `residence_location`, `residence_direction`, `residence_gps`, `next_of_kin`, `relationship`, `phone_of_kin`, `kin_residence`, `kin_residence_direction`, `date_employed`, `job_type`, `status`) VALUES (NULL, '$employee_id', '$firstname', '$middlename', '$lastname', '$phone', '$passport_photo_name', '$idtype', '$idnumber', '$nationalID_name', '$resaddress', '$reslocation', '$resdirection', '$gpsreslocation', '$fullname', '$relationship', '$kinphone', '$kinresaddress', '$kinresdirection', '$dateemployed', '$jobtype', '$empstatus')");
+			$query = mysqli_query($db_connect, "INSERT INTO `sharp_emp` (`id`, `employee_id`, `first_name`, `middle_name`, `last_name`, `phone`,`birthday`, `employee_image`, `id_type`, `id_number`, `id_card_image`, `residence_address`, `residence_location`, `residence_direction`, `residence_gps`, `next_of_kin`, `relationship`, `phone_of_kin`, `kin_residence`, `kin_residence_direction`, `date_employed`, `job_type`, `status`) VALUES (NULL, '$employee_id', '$firstname', '$middlename', '$lastname', '$phone','$birthday', '$passport_photo_name', '$idtype', '$idnumber', '$nationalID_name', '$resaddress', '$reslocation', '$resdirection', '$gpsreslocation', '$fullname', '$relationship', '$kinphone', '$kinresaddress', '$kinresdirection', '$dateemployed', '$jobtype', '$empstatus')");
 			$querycount = mysqli_num_rows($query);
 
 			ob_end_clean();

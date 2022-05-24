@@ -178,7 +178,7 @@
 					</span>
 					<div id="table">
 					</div>
-					<div class="printbtn_wrapper">
+					<div class="printbtn_wrapper"onclick="Clickheretoprint()" >
 						<span class="printbtn"> Print</span>
 					</div>
 				</div>

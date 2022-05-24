@@ -55,7 +55,7 @@
 
               var docprint=window.open("","",disp_setting);
                docprint.document.open();
-               docprint.document.write('<html><head><title>Sharpnet Ghana Limited | Employee Records</title>');
+               docprint.document.write('<html><head><title>Employee Records</title>');
                docprint.document.write('</head><link rel="stylesheet" type="text/css" href="../css/style.css" /><link href="../css/font-awesome.min.css" type="text/css" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"><body onLoad="self.print()" style="width: 800; font-size:12px; font-family:arial;">');
                docprint.document.write(content_vlue);
                docprint.document.write('</body><script>setTimeout(function(){ window.close(); },750);<//script></html>');
