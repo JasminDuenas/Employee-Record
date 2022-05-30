@@ -1,9 +1,9 @@
 $(document).ready(function(){
-	
+
     $( "#datepicker" ).datepicker({
     	changeMonth: true,
-    	changeYear: true,    	
-        dateFormat: 'yy-mm-dd' 
+    	changeYear: true,
+        dateFormat: 'yy-mm-dd'
     });
 
     /*
@@ -33,7 +33,7 @@ $(document).ready(function(){
 	    e.preventDefault();
 	    e.stopImmediatePropagation();
 
-	                
+
 	    var myFormData = new FormData();
 	    myFormData.append('employee_photo', $(".passport_photo").prop('files')[0]);
 
@@ -48,13 +48,13 @@ $(document).ready(function(){
 
 	        if ($.inArray(ext, ['png','jpg','jpeg']) != -1){
 
-	            if(file_size < 2242880) {                  
+	            if(file_size < 2242880) {
 
 	                if (sel_files.substring(3,11) == 'fakepath') {
 
 	                    sel_files = sel_files.substring(12);
 	                } // Remove c:\fake at beginning from localhost chrome
-	             
+
 	                    var selected_filename;
 	                    var upload_filename;
 
@@ -88,7 +88,7 @@ $(document).ready(function(){
 			                            $('.passport-disbtn').css("display","block");
 			                        }
 
-		                                
+
 		                            $(".del-passport_file").click(function(e){ //user click on remove text
 		                                e.preventDefault(); $(this).parent('div').remove();aa--;
 		                                if(aa < max_filess){
@@ -99,7 +99,7 @@ $(document).ready(function(){
 		                            })
 		                        }
 		                    });
-		                }    
+		                }
 	            } else {
 					$(".photoerror").html("File size should not exceed 2MB");
 				}
@@ -108,7 +108,7 @@ $(document).ready(function(){
 	        }
 	    } else {
 			$(".photoerror").html("Please select a file and click upload");
-	    }            
+	    }
 	});
 
 	/*
@@ -138,7 +138,7 @@ $(document).ready(function(){
 	    e.preventDefault();
 	    e.stopImmediatePropagation();
 
-	                
+
 	    var myFormData = new FormData();
 	    myFormData.append('employee_ID', $(".nationalID").prop('files')[0]);
 
@@ -153,13 +153,13 @@ $(document).ready(function(){
 
 	        if ($.inArray(ext, ['png','jpg','jpeg']) != -1){
 
-	            if(file_size < 2242880) {                  
+	            if(file_size < 2242880) {
 
 	                if (sel_files.substring(3,11) == 'fakepath') {
 
 	                    sel_files = sel_files.substring(12);
 	                } // Remove c:\fake at beginning from localhost chrome
-	             
+
 	                    var selected_filename;
 	                    var upload_filename;
 
@@ -192,7 +192,7 @@ $(document).ready(function(){
 			                            $('.nationID-btn').css("display","none");
 			                            $('.nationID-disbtn').css("display","block");
 			                        }
-		                                
+
 		                            $(".del-nationalID_file").click(function(e){ //user click on remove text
 		                                e.preventDefault(); $(this).parent('div').remove();a--;
 		                                if(a < max_files){
@@ -203,7 +203,7 @@ $(document).ready(function(){
 		                            })
 		                        }
 		                    });
-		                }    
+		                }
 	            } else {
 					$(".nationalIDerror").html("File size should not exceed 2MB");
 				}
@@ -212,7 +212,7 @@ $(document).ready(function(){
 	        }
 	    } else {
 			$(".nationalIDerror").html("Please select a file and click upload");
-	    }            
+	    }
 	});
 
 
@@ -293,25 +293,25 @@ $(document).ready(function(){
     	}
 
     	if($(".resaddress").val() == ""){
-    		resaddresserror = "Please enter residential address";
+    		resaddresserror = "Please enter your Department";
     	} else {
     		resaddresserror = "";
     	}
 
     	if($(".reslocation").val() == ""){
-    		reslocationerror = "Please enter location of residence";
+    		reslocationerror = "Please enter your position";
     	} else {
     		reslocationerror = "";
     	}
 
     	if($(".gpsreslocation").val() == ""){
-    		gpsreslocationerror = "Please enter residence gps location";
+    		gpsreslocationerror = "Please enter your Region";
     	} else {
     		gpsreslocationerror = "";
     	}
 
     	if($(".resdirection").val() == ""){
-    		resdirectionerror = "Please enter direction to employee's residence";
+    		resdirectionerror = "Please enter your home address";
     	} else {
     		resdirectionerror = "";
     	}
@@ -361,13 +361,13 @@ $(document).ready(function(){
     	}
 
     	if($(".kinresaddress").val() == ""){
-    		kinresaddresserror = "Please enter Residential Address of next of kin";
+    		kinresaddresserror = "Please enter your status of next of kin";
     	} else {
     		kinresaddresserror = "";
     	}
 
     	if($(".kinresdirection").val() == ""){
-    		kinresdirectionerror = "Please enter phone number of next of kin";
+    		kinresdirectionerror = "Please enter home address of next of kin";
     	} else {
     		kinresdirectionerror = "";
     	}
@@ -731,7 +731,7 @@ $(document).ready(function(){
 			passworderror = "";
 		}
 
-		
+
 		if($(".password").val() != "" && $(".password").val().length < 8){
 			passworderror = "Password should at least be 8 characters";
 		}
@@ -818,7 +818,7 @@ $(document).ready(function(){
 			})
 		}
 	})
-    	
+
 })
 
 
@@ -826,7 +826,7 @@ $(document).ready(function(){
 	User Login
 */
 	$("#loginForm").submit(function(event){
-		
+
 		event.preventDefault();
 
 		var usernameerror;
@@ -848,7 +848,7 @@ $(document).ready(function(){
 			passworderror = "";
 		}
 
-		
+
 		if($(".password").val() != "" && $(".password").val().length < 8){
 			passworderror = "Password must at least be 6 characters";
 		}
@@ -940,7 +940,7 @@ $("#changeusernameForm").submit(function(e){
 				passworderror = "";
 	}
 
-			
+
 	if($(".password").val() != "" && $(".password").val().length < 8){
 		passworderror = "Password must at least be 6 characters";
 	}
@@ -1047,7 +1047,7 @@ $("#changepasswordForm").submit(function(e){
 		oldpasserror = "";
 	}
 
-			
+
 	if(oldpass != "" && oldpass.length < 8){
 		oldpasserror = "Password should at least be 8 characters";
 	}
@@ -1062,7 +1062,7 @@ $("#changepasswordForm").submit(function(e){
 		newpasserror = "";
 	}
 
-			
+
 	if(newpass != "" && newpass.length < 8){
 		newpasserror = "Password should at least be 8 characters";
 	}
@@ -1240,7 +1240,7 @@ $("#displayempList").on('click', '.action_view', function(){
 		success: function(data){
 			setTimeout(function(){
 				$("#table").html(data);
-			}, 1000)			
+			}, 1000)
 		}
 	})
 })
@@ -1266,7 +1266,7 @@ $("#displayempList").on('click', '.action_edit', function(){
 	window.location.href = "edit_employee.php?id="+id;
 })
 
-$(".nobtn").click(function(){	
+$(".nobtn").click(function(){
 	$(".del_modal").fadeOut();
 	$(".del_warning").html("");
 	$(".yesbtn").attr("data-id", "");
@@ -1277,7 +1277,7 @@ function afterDelete(){
 	$(".del_warning").html("");
 	$(".yesbtn").attr("data-id", "");
 
-	window.location.reload();	
+	window.location.reload();
 }
 
 $(".yesbtn").click(function(){
@@ -1301,7 +1301,7 @@ $(".yesbtn").click(function(){
 				setTimeout(function(){
 					afterDelete();
 				}, 1000)
-			} else if(status == "failed"){				
+			} else if(status == "failed"){
 				$(".del_warning").html("An error has occured. Record could not be deleted");
 			}
 		}
