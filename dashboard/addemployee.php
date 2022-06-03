@@ -44,8 +44,9 @@
 		ob_end_clean();
 		if ($check_id == 0) {
 
-			$query = mysqli_query($db_connect, "INSERT INTO `sharp_emp` (`id`, `employee_id`, `first_name`, `middle_name`, `last_name`, `phone`, `employee_image`, `id_type`, `id_number`, `id_card_image`, `residence_address`, `residence_location`, `residence_direction`, `residence_gps`, `next_of_kin`, `relationship`, `phone_of_kin`, `kin_residence`, `kin_residence_direction`, `date_employed`, `job_type`, `status`) VALUES (NULL, '$employee_id', '$firstname', '$middlename', '$lastname', '$phone', '$passport_photo_name', '$idtype', '$idnumber', '$nationalID_name', '$resaddress', '$reslocation', '$resdirection', '$gpsreslocation', '$fullname', '$relationship', '$kinphone', '$kinresaddress', '$kinresdirection', '$dateemployed', '$jobtype', '$empstatus')");
-			$querycount = mysqli_num_rows($query);
+			$query = mysqli_query($db_connect, "INSERT INTO `sharp_emp` (`id`, `employee_id`, `first_name`, `middle_name`, `last_name`, `phone`, `employee_image`, `id_type`, `id_number`, `id_card_image`, `residence_address`, `residence_location`, `residence_direction`, `residence_gps`, `next_of_kin`, `relationship`, `phone_of_kin`, `kin_residence`, `kin_residence_direction`, `date_employed`, `job_type`, `status`)
+			VALUES (NULL, '$employee_id', '$firstname', '$middlename', '$lastname', '$phone', '$passport_photo_name', '$idtype', '$idnumber', '$nationalID_name', '$resaddress', '$reslocation', '$resdirection', '$gpsreslocation', '$fullname', '$relationship', '$kinphone', '$kinresaddress', '$kinresdirection', '$dateemployed', '$jobtype', '$empstatus')");
+			// $querycount = mysqli_num_rows($query);
 
 			ob_end_clean();
 			if($query){
