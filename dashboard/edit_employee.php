@@ -94,7 +94,7 @@
 						<div class="error phoneerror"></div>
 					</div>
 					<div class="input-box input-small right">
-						<label for="jobtype">Job Position</label><br>
+						<label for="jobtype">Job Type</label><br>
 						<input type="text" class="inputField jobtype" name="jobtype" value="<?php echo $job_type ?>">
 						<div class="error jobtypeerror"></div>
 					</div>
@@ -108,27 +108,27 @@
 						<select class="inputField empstatus" name="empstatus">
 							<option value="<?php echo $status ?>"><?php echo $status ?></option>
 							<option value="former">Former employee</option>
-							<option value="employee">Employee</option>
+							<option value="employee">Employee (Regular)</option>
 						</select>
 						<div class="error empstatuserror"></div>
 					</div>
 					<div class="input-box input-small left">
-						<label for="resaddress">Residential Address</label><br>
+						<label for="resaddress">Department</label><br>
 						<input type="text" class="inputField resaddress" name="resaddress" value="<?php echo $residence_address?>">
 						<div class="error resaddresserror"></div>
 					</div>
 					<div class="input-box input-small right">
-						<label for="reslocation">Location of Residence</label><br>
+						<label for="reslocation">Position</label><br>
 						<input type="text" class="inputField reslocation" name="reslocation" value="<?php echo $residence_location ?>">
 						<div class="error reslocationerror"></div>
 					</div>
 					<div class="input-box input-small left">
-						<label for="gpsreslocation">GPS Location of Residence</label><br>
+						<label for="gpsreslocation">Region</label><br>
 						<input type="text" class="inputField gpsreslocation" name="gpsreslocation" value="<?php echo $residence_gps ?>">
 						<div class="error gpsreslocationerror"></div>
 					</div>
 					<div class="input-box input-textarea right clearfix">
-						<label for="resdirection">Direction to Residence</label><br>
+						<label for="resdirection">Home Address</label><br>
 						<textarea class="inputField resdirection" name="resdirection"><?php echo $residence_direction ?></textarea>
 						<div class="error resdirectionerror"></div>
 					</div>
@@ -191,12 +191,12 @@
 						<div class="error kinphoneerror"></div>
 					</div>
 					<div class="input-box input-small right">
-						<label for="kinresaddress">Residential Address</label><br>
+						<label for="kinresaddress">Status</label><br>
 						<input type="text" class="inputField kinresaddress" name="kinresaddress" value="<?php echo $kin_residence ?>">
 						<div class="error kinresaddresserror"></div>
 					</div>
 					<div class="input-box input-textarea left clearfix">
-						<label for="kinresdirection">Direction to Residence</label><br>
+						<label for="kinresdirection">Home Address</label><br>
 						<textarea class="inputField kinresdirection" name="kinresdirection"><?php echo $kin_residence_direction ?></textarea>
 						<div class="error kinresdirectionerror"></div>
 					</div>

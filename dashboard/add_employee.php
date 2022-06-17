@@ -58,12 +58,7 @@
 						<div class="error phoneerror"></div>
 					</div>
 					<div class="input-box input-small right">
-						<label for="dateemployed">Birthday</label><br>
-						<input type="text" id="datepicker" class="inputField birthday" name="birthday">
-						<div class="error birthdayerror"></div>
-					</div>
-					<div class="input-box input-small right">
-						<label for="jobtype">Job Position</label><br>
+						<label for="jobtype">Job Type</label><br>
 						<input type="text" class="inputField jobtype" name="jobtype">
 						<div class="error jobtypeerror"></div>
 					</div>
@@ -72,17 +67,12 @@
 						<input type="text" id="datepicker" class="inputField dateemployed" name="dateemployed">
 						<div class="error dateemployederror"></div>
 					</div>
-					<div class="input-box input-small left">
-						<label for="dateemployed">Employment Status</label><br>
-						<input type="text" id="datepicker" class="inputField dateemployed" name="dateemployed">
-						<div class="error dateemployederror"></div>
-					</div>
 					<div class="input-box input-small right">
-						<label for="empstatus">Status</label><br>
+						<label for="empstatus">Employment status</label><br>
 						<select class="inputField empstatus" name="empstatus">
 							<option value="">-- Select status --</option>
 							<option value="former">Former employee</option>
-							<option value="employee">Employee</option>
+							<option value="employee">Employee (Regular)</option>
 						</select>
 						<div class="error empstatuserror"></div>
 					</div>
@@ -92,22 +82,17 @@
 						<div class="error resaddresserror"></div>
 					</div>
 					<div class="input-box input-small right">
-						<label for="reslocation">Daily Rate</label><br>
+						<label for="reslocation">Position</label><br>
 						<input type="text" class="inputField reslocation" name="reslocation">
 						<div class="error reslocationerror"></div>
 					</div>
 					<div class="input-box input-small left">
-						<label for="gpsreslocation">Monthly Rate</label><br>
-						<input type="text" class="inputField gpsreslocation" name="gpsreslocation">
-						<div class="error gpsreslocationerror"></div>
-					</div>
-					<div class="input-box input-small right">
-						<label for="gpsreslocation">Allowance</label><br>
+						<label for="gpsreslocation">Region</label><br>
 						<input type="text" class="inputField gpsreslocation" name="gpsreslocation">
 						<div class="error gpsreslocationerror"></div>
 					</div>
 					<div class="input-box input-textarea right clearfix">
-						<label for="resdirection">Home Addess</label><br>
+						<label for="resdirection">Home Address</label><br>
 						<textarea class="inputField resdirection" name="resdirection"></textarea>
 						<div class="error resdirectionerror"></div>
 					</div>
@@ -126,31 +111,20 @@
 					</div>
 					<div class="section_subtitle left">Upload Employee ID</div>
 					<div class="input-box input-small left">
-						<label for="idnumber">SS number</label><br>
+						<label for="idnumber">National ID Number</label><br>
 						<input type="text" class="inputField idnumber" name="idnumber">
 						<div class="error IDnumbererror"></div>
 					</div>
 					<div class="input-box input-small right">
-						<label for="idtype">HDMF No.</label><br>
-						<input type="text" class="inputField idtype" name="idtype">
-						<!-- <select class="inputField idtype" name="idtype">
-							<option value=""> Select ID type </option>
+						<label for="idtype">National ID type</label><br>
+						<select class="inputField idtype" name="idtype">
+							<option value="">-- Select ID type --</option>
 							<option value="Voter's">Voter's</option>
 							<option value="Passport">Passport</option>
 							<option value="NHIS">NHIS</option>
 							<option value="Driving License">Driving License</option>
-						</select> -->
+						</select>
 						<div class="error idtypeerror"></div>
-					</div>
-					<div class="input-box input-small left">
-						<label for="tinnumber">TIN No.</label><br>
-						<input type="text" class="inputField tinnumber" name="tinnumber">
-						<div class="error tinnumbererror"></div>
-					</div>
-					<div class="input-box input-small right">
-						<label for="tinnumber">PHIC No.</label><br>
-						<input type="text" class="inputField phicnumber" name="phicnumber">
-						<div class="error phicnumbererror"></div>
 					</div>
 					<div class="input-box input-upload-box left">
 						<div class="upload-wrapper">
@@ -181,7 +155,7 @@
 						<div class="error kinphoneerror"></div>
 					</div>
 					<div class="input-box input-small right">
-						<label for="kinresaddress">Residential Address</label><br>
+						<label for="kinresaddress">Status</label><br>
 						<input type="text" class="inputField kinresaddress" name="kinresaddress">
 						<div class="error kinresaddresserror"></div>
 					</div>
